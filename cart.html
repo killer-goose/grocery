@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Grocery Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="loadCart()">
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="my-profile.html">My Profile</a>
+    <a href="cart.html">Cart</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <div class="cart-container">
+    <div class="cart-items">
+      <h2>Cart</h2>
+      <ul id="cart-item-list">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <div class="cart-summary">
+      <h2>Summary</h2>
+      <!-- Cart summary details will be dynamically added here -->
+      <!-- 
+        <li>
+        <span>Apple</span>
+        <span>200/kg</span>
+        <button onclick="removeFromCart(${items[i].id})">Remove</button>
+      </li> -->
+      <p>Total Amount: ₹<span id="cart-total"></span></p>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <footer>&copy; 2024 Online Grocery Store</footer>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>
