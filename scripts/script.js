@@ -17,7 +17,7 @@ function loadHomeProducts() {
     .map(
       (item) =>
         `<div class="product" id=${item.name}>
-      <img src="/assets/${item.imgUrl}" alt=${item.name} class='product-img' />
+      <img src="./assets/${item.imgUrl}" alt=${item.name} class='product-img' />
       <p>${item.name}</p>
       <p>Price: ₹${item.price}/kg</p>
       <button onclick=addToCart(${item.id})>Add to Cart</button>
@@ -67,7 +67,7 @@ function loadCart() {
       while (item--) {
         cartTotal += items[i].price
         result += `<li>
-            <span><img src="/assets/${items[i].imgUrl}" alt=${items[i].name} class='cart-img' />
+            <span><img src="./assets/${items[i].imgUrl}" alt=${items[i].name} class='cart-img' />
             </span>
             <span>${items[i].name}</span>
             <span> ₹${items[i].price}/kg</span>
